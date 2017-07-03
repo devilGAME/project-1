@@ -3,28 +3,6 @@ $font: ""
 $main_color: #be1e2d
 $color_text: #232020
 
-*::-webkit-input-placeholder
-	color: #666
-	opacity: 1
-
-*:-moz-placeholder
-	color: #666
-	opacity: 1
-
-*::-moz-placeholder
-	color: #666
-	opacity: 1
-
-*:-ms-input-placeholder
-	color: #666
-	opacity: 1
-
-body input:focus:required:invalid,
-body textarea:focus:required:invalid
-	color: #666
-body input:required:valid,
-body textarea:required:valid
-	color: #666
 
 *
 	margin: 0
@@ -46,6 +24,18 @@ body
 	margin: 0 auto
 	padding: 0 10px
 	overflow: hidden
-
+	h1
+		float: left
+	nav
+		float: right
+		li
+			display: inline-block;
+.slide
+	position: relative
+	text-align: center
+	.text
+		position: absolute
+		top: 50%
+		
 
 @import "_media"

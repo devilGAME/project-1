@@ -5,38 +5,31 @@
        url('../fonts/PFSquareSansPro/PFSquareSansPro.woff') format('woff'),
        url('../fonts/PFSquareSansPro/PFSquareSansPro.ttf') format('truetype');
 }
-@font-face{
-  font-family: "Lobster"
-  src: url("../fonts/Lobster/Lobster.eot")
-  src: url("../fonts/Lobster/Lobster.ttf")
-  src: url("../fonts/Lobster/Lobster.woff")
-  font-style: normal
-  font-weight: normal
+@font-face {
+  font-family:'PFSquareSansPro'; 
+  src: url('../fonts/PFSquareSansPro/PFSquareSansPro.eot'); 
+  src: local('PFSquareSansPro'),
+       url('../fonts/PFSquareSansPro/PFSquareSansPro.woff') format('woff'),
+       url('../fonts/PFSquareSansPro/PFSquareSansPro.ttf') format('truetype');
 }
-
-@font-face{
-  font-family: "Open Sans"
-  src: url("../fonts/OpenSans/OpenSansRegular.woff")
-  src: url("../fonts/OpenSans/OpenSansRegular.eot")
-  src: url("../fonts/OpenSans/OpenSansRegular.ttf")
-  font-style: normal
-  font-weight: normal
+@font-face {
+  font-family:'Lobster'; 
+  src: url('../fonts/Lobster/Lobster.eot'); 
+  src: local('Lobster'),
+       url('../fonts/Lobster/Lobster.woff') format('woff'),
+       url('../fonts/Lobster/Lobster.ttf') format('truetype');
 }
-
-@font-face{
-  font-family: "Open Sans Semibold"
-  src: url("../fonts/OpenSans/OpenSansSemibold/OpenSans-Semibold.woff")
-  src: url("../fonts/OpenSans/OpenSansSemibold/OpenSans-Semibold.eot")
-  src: url("../fonts/OpenSans/OpenSansSemibold/OpenSans-Semibold.ttf")
-  font-style: normal
-  font-weight: normal
+@font-face {
+  font-family:'MYRIADPROREGULAR'; 
+  src: url('../fonts/Myriad Pro/Myriad Pro.eot'); 
+  src: local('MYRIADPROREGULAR'),
+       url('../fonts/Myriad Pro/MYRIADPROREGULAR.woff') format('woff'),
+       url('../fonts/Myriad Pro/MYRIADPROREGULAR.ttf') format('truetype');
 }
-
-@font-face{
-  font-family: "Myriad Pro"
-  src: url("../fonts/Myriad Pro/MYRIADPROREGULAR.woff")
-  src: url("../fonts/Myriad Pro/MYRIADPROREGULAR.eot")
-  src: url("../fonts/Myriad Pro/MYRIADPROREGULAR.ttf")
-  font-style: normal
-  font-weight: normal
+@font-face {
+  font-family:'PFSquareSansPro'; 
+  src: url('../fonts/PFSquareSansPro/PFSquareSansPro.eot'); 
+  src: local('PFSquareSansPro'),
+       url('../fonts/PFSquareSansPro/PFSquareSansPro.woff') format('woff'),
+       url('../fonts/PFSquareSansPro/PFSquareSansPro.ttf') format('truetype');
 }

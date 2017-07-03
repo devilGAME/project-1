@@ -3,29 +3,25 @@
   src: url("../fonts/PFSquareSansPro/PFSquareSansPro.eot");
   src: local("PFSquareSansPro"), url("../fonts/PFSquareSansPro/PFSquareSansPro.woff") format("woff"), url("../fonts/PFSquareSansPro/PFSquareSansPro.ttf") format("truetype"); }
 
-*::-webkit-input-placeholder {
-  color: #666;
-  opacity: 1; }
+@font-face {
+  font-family: 'PFSquareSansPro';
+  src: url("../fonts/PFSquareSansPro/PFSquareSansPro.eot");
+  src: local("PFSquareSansPro"), url("../fonts/PFSquareSansPro/PFSquareSansPro.woff") format("woff"), url("../fonts/PFSquareSansPro/PFSquareSansPro.ttf") format("truetype"); }
 
-*:-moz-placeholder {
-  color: #666;
-  opacity: 1; }
+@font-face {
+  font-family: 'Lobster';
+  src: url("../fonts/Lobster/Lobster.eot");
+  src: local("Lobster"), url("../fonts/Lobster/Lobster.woff") format("woff"), url("../fonts/Lobster/Lobster.ttf") format("truetype"); }
 
-*::-moz-placeholder {
-  color: #666;
-  opacity: 1; }
+@font-face {
+  font-family: 'MYRIADPROREGULAR';
+  src: url("../fonts/Myriad Pro/Myriad Pro.eot");
+  src: local("MYRIADPROREGULAR"), url("../fonts/Myriad Pro/MYRIADPROREGULAR.woff") format("woff"), url("../fonts/Myriad Pro/MYRIADPROREGULAR.ttf") format("truetype"); }
 
-*:-ms-input-placeholder {
-  color: #666;
-  opacity: 1; }
-
-body input:focus:required:invalid,
-body textarea:focus:required:invalid {
-  color: #666; }
-
-body input:required:valid,
-body textarea:required:valid {
-  color: #666; }
+@font-face {
+  font-family: 'PFSquareSansPro';
+  src: url("../fonts/PFSquareSansPro/PFSquareSansPro.eot");
+  src: local("PFSquareSansPro"), url("../fonts/PFSquareSansPro/PFSquareSansPro.woff") format("woff"), url("../fonts/PFSquareSansPro/PFSquareSansPro.ttf") format("truetype"); }
 
 * {
   margin: 0;
@@ -43,6 +39,19 @@ body {
   margin: 0 auto;
   padding: 0 10px;
   overflow: hidden; }
+  .content h1 {
+    float: left; }
+  .content nav {
+    float: right; }
+    .content nav li {
+      display: inline-block; }
+
+.slide {
+  position: relative;
+  text-align: center; }
+  .slide .text {
+    position: absolute;
+    top: 50%; }
 
 /*==========  Desktop First Method  ==========*/
 /* Large Devices, Wide Screens */
