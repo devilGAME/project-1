@@ -4,24 +4,26 @@
   src: local("PFSquareSansPro"), url("../fonts/PFSquareSansPro/PFSquareSansPro.woff") format("woff"), url("../fonts/PFSquareSansPro/PFSquareSansPro.ttf") format("truetype"); }
 
 @font-face {
-  font-family: 'PFSquareSansPro';
-  src: url("../fonts/PFSquareSansPro/PFSquareSansPro.eot");
-  src: local("PFSquareSansPro"), url("../fonts/PFSquareSansPro/PFSquareSansPro.woff") format("woff"), url("../fonts/PFSquareSansPro/PFSquareSansPro.ttf") format("truetype"); }
-
-@font-face {
   font-family: 'Lobster';
-  src: url("../fonts/Lobster/Lobster.eot");
-  src: local("Lobster"), url("../fonts/Lobster/Lobster.woff") format("woff"), url("../fonts/Lobster/Lobster.ttf") format("truetype"); }
+  src: url("../fonts/lobster/Lobster_1_4.eot");
+  src: local("Lobster_1_4"), url("../fonts/lobster/Lobster_1_4.woff") format("woff"), url("../fonts/lobster/Lobster_1_4.ttf") format("truetype"); }
 
 @font-face {
-  font-family: 'MYRIADPROREGULAR';
-  src: url("../fonts/Myriad Pro/Myriad Pro.eot");
-  src: local("MYRIADPROREGULAR"), url("../fonts/Myriad Pro/MYRIADPROREGULAR.woff") format("woff"), url("../fonts/Myriad Pro/MYRIADPROREGULAR.ttf") format("truetype"); }
+  font-family: 'OpenSans';
+  src: url("../fonts/openSANS/OpenSans-Regular.eot");
+  src: local("OpenSans-Regular"), url("../fonts/openSANS/OpenSans-Regular.woff") format("woff"), url("../fonts/openSANS/OpenSans-Regular.ttf") format("truetype"); }
 
 @font-face {
-  font-family: 'PFSquareSansPro';
-  src: url("../fonts/PFSquareSansPro/PFSquareSansPro.eot");
-  src: local("PFSquareSansPro"), url("../fonts/PFSquareSansPro/PFSquareSansPro.woff") format("woff"), url("../fonts/PFSquareSansPro/PFSquareSansPro.ttf") format("truetype"); }
+  font-family: 'OpenSansSemi-Bold';
+  src: url("../fonts/openSANSsemiBold/OpenSans-SemiBold.eot");
+  src: local("OpenSans-SemiBold"), url("../fonts/openSANSsemiBold/OpenSans-SemiBold.woff") format("woff"), url("../fonts/openSANSsemiBold/OpenSans-SemiBold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "MyriadProRegular";
+  src: url("../fonts/MyriadProRegular/MyriadProRegular.eot");
+  src: url("../fonts/MyriadProRegular/MyriadProRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/MyriadProRegular/MyriadProRegular.woff") format("woff"), url("../fonts/MyriadProRegular/MyriadProRegular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
 
 * {
   margin: 0;
@@ -39,19 +41,64 @@ body {
   margin: 0 auto;
   padding: 0 10px;
   overflow: hidden; }
+  .content a {
+    text-decoration: none; }
   .content h1 {
-    float: left; }
+    float: left;
+    font-size: 43px;
+    vertical-align: middle; }
+    .content h1 a {
+      color: #44c0c2;
+      font-family: Lobster; }
   .content nav {
     float: right; }
     .content nav li {
-      display: inline-block; }
+      display: inline-block;
+      padding: 30px 24px;
+      font-size: 15px;
+      font-family: OpenSans; }
+      .content nav li a {
+        color: #44c0c2; }
+    .content nav li:hover {
+      background-color: #f8f9fb;
+      border-bottom: 3px solid #44c0c2; }
+  .content .active {
+    background-color: #f8f9fb;
+    border-bottom: 3px solid #44c0c2; }
+
+.slider {
+  max-width: 100%; }
 
 .slide {
   position: relative;
   text-align: center; }
+  .slide img {
+    display: block;
+    width: 100%; }
   .slide .text {
     position: absolute;
-    top: 50%; }
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%); }
+    .slide .text h2 {
+      font: 63px OpenSans;
+      color: #fff; }
+    .slide .text p {
+      font: 23px OpenSans;
+      color: #fff; }
+    .slide .text button {
+      width: 225px;
+      height: 63px;
+      border: 3px solid #fff;
+      -webkit-border-radius: 5px;
+              border-radius: 5px;
+      background-color: rgba(117, 226, 255, 0);
+      font: 26px MyriadProRegular;
+      color: #fff;
+      margin: 63px 0 0 0;
+      cursor: pointer; }
 
 /*==========  Desktop First Method  ==========*/
 /* Large Devices, Wide Screens */
