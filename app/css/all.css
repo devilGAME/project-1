@@ -101,6 +101,17 @@ body {
       margin: 63px 0 0 0;
       cursor: pointer; }
 
+.Team h3 {
+  font: 42px OpenSans;
+  color: #4e525d;
+  text-align: center;
+  margin: 108px 0 0 0; }
+
+footer {
+  max-width: 100%; }
+  footer img {
+    width: 100%; }
+
 /*==========  Desktop First Method  ==========*/
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1200px) {
