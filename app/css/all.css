@@ -56,7 +56,8 @@ body {
       display: inline-block;
       padding: 30px 24px;
       font-size: 15px;
-      font-family: OpenSans; }
+      font-family: OpenSans;
+      float: left; }
       .content nav li a {
         color: #44c0c2; }
     .content nav li:hover {
@@ -106,6 +107,22 @@ body {
   color: #4e525d;
   text-align: center;
   margin: 108px 0 0 0; }
+
+.Team h4 {
+  color: #4e525d;
+  text-align: center;
+  font: 22px OpenSans; }
+
+.Team p {
+  color: #4e525d;
+  text-align: center;
+  font: 14px OpenSans;
+  max-width: 246px; }
+
+.Team ul {
+  text-align: center; }
+  .Team ul li {
+    display: inline-block; }
 
 footer {
   max-width: 100%; }
