@@ -1,7 +1,8 @@
 @import "../css/fonts"
-$font: ""
-$main_color: #be1e2d
-$color_text: #232020
+$font: "OpenSans"
+$main_color: #44c0c2
+$color_text: #4e525d
+$border_Color: #ecf0f1
 
 
 *
@@ -14,6 +15,7 @@ $color_text: #232020
 	background-size: cover
 	background-position: center
 body
+	text-align: center
 	background: #fff
 	font-family: $font
 	min-width: 320px
@@ -29,35 +31,33 @@ body
 	h1
 		float: left
 		font-size: 43px
-		vertical-align: middle
+		line-height: 1.8
+		font-weight: normal
 		a
-			color: #44c0c2
+			color: $main_color
 			font-family: Lobster
-			// vertical-align: middle
 
 	nav
 		float: right
-
 		li
 			display: inline-block;
 			padding: 30px 24px
 			font-size: 15px
-			font-family: OpenSans
+			font-family: $font
 			float: left
 			a
-				color: #44c0c2
-		li:hover
+				color: $color_text
+		li:hover, & li.active
 			background-color: #f8f9fb
-			border-bottom: 3px solid #44c0c2
-	.active
-		background-color: #f8f9fb
-		border-bottom: 3px solid #44c0c2
+			border-bottom: 3px solid $main_color
+			a
+				color: $main_color
+
 
 .slider
-	max-width: 100%
+
 .slide
 	position: relative
-	text-align: center
 	img 
 		display: block
 		width: 100%
@@ -65,52 +65,150 @@ body
 	.text
 		position: absolute
 		top: 50%
-		left: 50%
-		transform: translate(-50%,-50%)
+		width: 100%
+		transform: translate(0,-50%)
 		h2
-			font: 63px OpenSans
+			font: 63px $font
 			color: #fff
-			max-width: 670px
+			margin-bottom: 15px
+			text-shadow: 0.1px 1px 0 rgba(0, 0, 0, 0.16)
 		p
-			font: 23px OpenSans
+			font: 23px $font
 			color: #fff
+			max-width: 377px
+			margin: 0 auto
 		button
-			width: 225px
-			height: 63px
+			
 			border: 3px solid #fff
 			border-radius: 5px;
 			background-color: rgba(117, 226, 255, 0)
 			font: 26px MyriadProRegular
 			color: #fff
+			padding: 10px 30px
 			margin: 63px 0 0 0
 			cursor: pointer
-.Team
+%owl-base
+	position: absolute
+	top: 53%
+	display: block
+	height: 52px
+	background-repeat: no-repeat
+	width: 51px
+	transform: translate(0px, -50%)
+	background-image: url("../img/sprite.png") 
+	&:hover
+		opacity: 0.7
+.owl-prev
+	@extend %owl-base
+	left: 3%
+.owl-next
+	@extend %owl-base
+	right: 3%
+	background-position: 100% 0
+
+.team
 	h3
-		font: 42px OpenSans
+		font: 42px $font
 		color: #4e525d
-		text-align: center
-		margin: 108px 0 0 0
-	h4
-		color: #4e525d
-		text-align: center
-		font: 22px OpenSans
-	p
-		color: #4e525d
-		text-align: center
-		font: 14px OpenSans
-		max-width: 246px
+		margin: 80px 0 100px 0
+
 	ul
-		text-align: center
+		padding-bottom: 50px
 		li
 			display: inline-block
+			box-sizing: border-box
+			width: 24%
+			padding: 0 21px
+	.photo
+		width: 200px
+		height: 200px
+		border-radius: 50%
+		background-color: #eeeef0
+		margin: 0 auto 70px
+		position: relative
+		&:hover::after
+			content: '+'
+			color: #f46d6d
+			font-size: 80px
+			font-weight: 700
+			position: absolute
+			top: 50%
+			left: 50%
+			transform: translate(-50%, -50%)
+	h4
+		color: #4e525d
+		font: 24px $font
+		margin-bottom: 7px
+	p
+		color: #4e525d
+		font: 14px $font
+		margin-bottom: 30px
+.price
+	background-color: #f1f1f1 
+.carts
+	// float: left
+	box-sizing: border-box
+	background-color: #f8f9fb
+	h4
+		background-color: #485460
+		color: #fff
+		font: 26px $font
+		padding: 15px 0
+div.carts
+	display: inline-block
+	text-align: center
+	width: 368px
+	margin: 100px 0
+	ul
+		list-style-type: none
+		li
+			border-left: 1px solid $border_Color
+			border-right: 1px solid $border_Color
+			border-bottom: 1px solid $border_Color
+			font: 14px $font
+			color: #abafb4
+			line-height: 40px
+			&:nth-child(1)
+				padding: 25px
+				font: 20px $font
+				color: #485460
+	button
+		background-color: #788492
+		color: #fff
+		font: 17px MyriadProRegular
+		border: 0px solid
+		width: 170px
+		height: 40px
+		margin: 29px
 
-	
+.cost
+	background-color: #f8f9fb
+div.carts
+	&:hover
+		h4, button
+			background-color: #49cbcd
+		
 
 footer
 	max-width: 100%
-	img
-		width: 100%
-
-		
+	background-image: url('../img/contactus.jpeg')
+	h4
+		font: 42px $font
+		color: #fff
+	.get_in_touch
+		text-align: left
+		h5
+			font: 24px $font
+			color: #fff
+		p
+			font: 14px $font
+			color: #a9a9a9
+			max-width: 431px
+			margin-bottom: 42px
+		img
+			margin: 20px 0
+		.adr
+			color: #bface2
+			margin: 0
 
 @import "_media"

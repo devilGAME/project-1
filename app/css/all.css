@@ -30,11 +30,12 @@
   padding: 0; }
 
 body {
+  text-align: center;
   background: #fff;
-  font-family: "";
+  font-family: "OpenSans";
   min-width: 320px;
   font-size: 25px;
-  color: #232020; }
+  color: #4e525d; }
 
 .content {
   max-width: 1200px;
@@ -46,7 +47,8 @@ body {
   .content h1 {
     float: left;
     font-size: 43px;
-    vertical-align: middle; }
+    line-height: 1.8;
+    font-weight: normal; }
     .content h1 a {
       color: #44c0c2;
       font-family: Lobster; }
@@ -56,78 +58,181 @@ body {
       display: inline-block;
       padding: 30px 24px;
       font-size: 15px;
-      font-family: OpenSans;
+      font-family: "OpenSans";
       float: left; }
       .content nav li a {
-        color: #44c0c2; }
-    .content nav li:hover {
+        color: #4e525d; }
+    .content nav li:hover, .content nav li.active {
       background-color: #f8f9fb;
       border-bottom: 3px solid #44c0c2; }
-  .content .active {
-    background-color: #f8f9fb;
-    border-bottom: 3px solid #44c0c2; }
-
-.slider {
-  max-width: 100%; }
+      .content nav li:hover a, .content nav li.active a {
+        color: #44c0c2; }
 
 .slide {
-  position: relative;
-  text-align: center; }
+  position: relative; }
   .slide img {
     display: block;
     width: 100%; }
   .slide .text {
     position: absolute;
     top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%); }
+    width: 100%;
+    -webkit-transform: translate(0, -50%);
+        -ms-transform: translate(0, -50%);
+            transform: translate(0, -50%); }
     .slide .text h2 {
-      font: 63px OpenSans;
+      font: 63px "OpenSans";
       color: #fff;
-      max-width: 670px; }
+      margin-bottom: 15px;
+      text-shadow: 0.1px 1px 0 rgba(0, 0, 0, 0.16); }
     .slide .text p {
-      font: 23px OpenSans;
-      color: #fff; }
+      font: 23px "OpenSans";
+      color: #fff;
+      max-width: 377px;
+      margin: 0 auto; }
     .slide .text button {
-      width: 225px;
-      height: 63px;
       border: 3px solid #fff;
       -webkit-border-radius: 5px;
               border-radius: 5px;
       background-color: rgba(117, 226, 255, 0);
       font: 26px MyriadProRegular;
       color: #fff;
+      padding: 10px 30px;
       margin: 63px 0 0 0;
       cursor: pointer; }
 
-.Team h3 {
-  font: 42px OpenSans;
-  color: #4e525d;
-  text-align: center;
-  margin: 108px 0 0 0; }
+.owl-prev, .owl-next {
+  position: absolute;
+  top: 53%;
+  display: block;
+  height: 52px;
+  background-repeat: no-repeat;
+  width: 51px;
+  -webkit-transform: translate(0px, -50%);
+      -ms-transform: translate(0px, -50%);
+          transform: translate(0px, -50%);
+  background-image: url("../img/sprite.png"); }
+  .owl-prev:hover, .owl-next:hover {
+    opacity: 0.7; }
 
-.Team h4 {
-  color: #4e525d;
-  text-align: center;
-  font: 22px OpenSans; }
+.owl-prev {
+  left: 3%; }
 
-.Team p {
-  color: #4e525d;
-  text-align: center;
-  font: 14px OpenSans;
-  max-width: 246px; }
+.owl-next {
+  right: 3%;
+  background-position: 100% 0; }
 
-.Team ul {
-  text-align: center; }
-  .Team ul li {
-    display: inline-block; }
+.team h3 {
+  font: 42px "OpenSans";
+  color: #4e525d;
+  margin: 80px 0 100px 0; }
+
+.team ul {
+  padding-bottom: 50px; }
+  .team ul li {
+    display: inline-block;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    width: 24%;
+    padding: 0 21px; }
+
+.team .photo {
+  width: 200px;
+  height: 200px;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  background-color: #eeeef0;
+  margin: 0 auto 70px;
+  position: relative; }
+  .team .photo:hover::after {
+    content: '+';
+    color: #f46d6d;
+    font-size: 80px;
+    font-weight: 700;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%); }
+
+.team h4 {
+  color: #4e525d;
+  font: 24px "OpenSans";
+  margin-bottom: 7px; }
+
+.team p {
+  color: #4e525d;
+  font: 14px "OpenSans";
+  margin-bottom: 30px; }
+
+.price {
+  background-color: #f1f1f1; }
+
+.carts {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #f8f9fb; }
+  .carts h4 {
+    background-color: #485460;
+    color: #fff;
+    font: 26px "OpenSans";
+    padding: 15px 0; }
+
+div.carts {
+  display: inline-block;
+  text-align: center;
+  width: 368px;
+  margin: 100px 0; }
+  div.carts ul {
+    list-style-type: none; }
+    div.carts ul li {
+      border-left: 1px solid #ecf0f1;
+      border-right: 1px solid #ecf0f1;
+      border-bottom: 1px solid #ecf0f1;
+      font: 14px "OpenSans";
+      color: #abafb4;
+      line-height: 40px; }
+      div.carts ul li:nth-child(1) {
+        padding: 25px;
+        font: 20px "OpenSans";
+        color: #485460; }
+  div.carts button {
+    background-color: #788492;
+    color: #fff;
+    font: 17px MyriadProRegular;
+    border: 0px solid;
+    width: 170px;
+    height: 40px;
+    margin: 29px; }
+
+.cost {
+  background-color: #f8f9fb; }
+
+div.carts:hover h4, div.carts:hover button {
+  background-color: #49cbcd; }
 
 footer {
-  max-width: 100%; }
-  footer img {
-    width: 100%; }
+  max-width: 100%;
+  background-image: url("../img/contactus.jpeg"); }
+  footer h4 {
+    font: 42px "OpenSans";
+    color: #fff; }
+  footer .get_in_touch {
+    text-align: left; }
+    footer .get_in_touch h5 {
+      font: 24px "OpenSans";
+      color: #fff; }
+    footer .get_in_touch p {
+      font: 14px "OpenSans";
+      color: #a9a9a9;
+      max-width: 431px;
+      margin-bottom: 42px; }
+    footer .get_in_touch img {
+      margin: 20px 0; }
+    footer .get_in_touch .adr {
+      color: #bface2;
+      margin: 0; }
 
 /*==========  Desktop First Method  ==========*/
 /* Large Devices, Wide Screens */
